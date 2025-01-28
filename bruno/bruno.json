@@ -1,0 +1,13 @@
+{
+  "version": "1",
+  "name": "bruno-prisma",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "presets": {
+    "requestType": "http",
+    "requestUrl": "{{app_url}}"
+  }
+}

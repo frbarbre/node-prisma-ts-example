@@ -1,0 +1,19 @@
+meta {
+  name: Create Post
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{app_url}}/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Test Post",
+    "content": "This is a test post content",
+    "user_id": 1
+  }
+} 
