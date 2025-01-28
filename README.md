@@ -97,24 +97,7 @@ For database development:
 ```bash
 npm run prisma:generate
 ```
-
-- Create and apply migrations
-
-```bash
-npm run prisma:migrate:dev
-```
-
-- Deploy migrations
-
-```bash
-npm run prisma:migrate
-```
-
-- Open Prisma Studio (GUI for database)
-
-```bash
-npm run prisma:studio
-```
+**All other migrations will be applied in the Docker Containers**
 
 ## Troubleshooting
 
