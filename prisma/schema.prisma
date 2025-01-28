@@ -31,8 +31,3 @@ model Comment {
   post    Post?  @relation(fields: [postId], references: [id])
   postId  Int?   @map("post_id")
 }
-
-model Test {
-  id Int @id @default(autoincrement())
-  name String @db.VarChar(100)
-}
