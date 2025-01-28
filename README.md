@@ -30,8 +30,13 @@ npm install
    - Configure the following variables in `.env`:
 
    ```
-   PORT=8000
-   DATABASE_URL="mysql://root:your_password@mysql:3306/mydatabase"
+   PORT=your_node_port
+   DB_HOST=your_db_host
+   DB_PORT=your_db_port
+   DB_USER=your_db_user
+   DB_PASSWORD=your_db_password
+   DB_NAME=your_db_name
+   DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}"
    ```
 
 3. Generate Prisma Client:
